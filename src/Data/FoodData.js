@@ -7,53 +7,54 @@ export function formatPrice(price) {
 
 export const foodItems = [
   {
-    name: "Cheese Pizza",
+    name: "Pizza Comun",
     img: "/img/pizza.png",
     section: "Pizza",
-    price: 1
+    price: 300
   },
   {
-    name: "Pepperoni Pizza",
+    name: "Pizza calabresa",
     img: "/img/pizza2.jpeg",
     section: "Pizza",
-    price: 1.5
+    price: 350
   },
   {
-    name: "Chicken Pizza",
+    name: "Pizza con pollo",
     img: "/img/chicken-pizza.jpeg",
     section: "Pizza",
-    price: 2
+    price: 350
   },
   {
     img: "/img/healthy-pizza.jpeg",
-    name: "Veggie Pizza",
+    name: "Pizza vegetariana",
     section: "Pizza",
-    price: 2
+    price: 400
   },
   {
     img: "/img/burger.jpeg",
-    name: "Burger",
+    name: "Hamburguesa espacial",
     section: "Sandwich",
-    price: 3
+    price: 200
   },
-  { img: "/img/gyro.jpeg", name: "Gyro", section: "Sandwich", price: 4.5 },
+  { img: "/img/gyro.jpeg", name: "Tacos", section: "Sandwich", price: 250 },
   {
     img: "/img/sandwich.jpeg",
-    name: "Shrimp PoBoy",
+    name: "Sanwich",
     section: "Sandwich",
-    price: 6
+    price: 200
   },
   {
     img: "/img/fries.jpeg",
-    name: "Fries",
-    section: "Sides",
-    price: 1
+    name: "Papas fritas ",
+    section: "Guarnicion",
+    price: 100
   },
   {
-    price: 1,
-    name: "Soda",
+    price: 200,
+    img: "https://images.unsplash.com/photo-1595177924779-dbe82554cc24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    name: "Gaseosas",
     section: "Drinks",
-    choices: ["Coke", "Sprite", "Root Beer"]
+    choices: ["Coca-cola", "Sprite", "seven-up"]
   }
 ];
 

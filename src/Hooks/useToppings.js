@@ -18,17 +18,10 @@ export function useToppings(defaultTopping) {
 }
 
 const toppingsList = [
-  "Extra Cheese",
-  "Pepperoni",
-  "Sausage",
-  "Onions",
-  "Peppers",
-  "Pineapple",
-  "Ham",
-  "Spinach",
-  "Artichokes",
-  "Mushrooms",
-  "Anchovies"
+  'Queso Extra',
+  "Huevo",
+  'Aceitunas',
+  'Jamon'
 ];
 
 function getDefaultToppings() {

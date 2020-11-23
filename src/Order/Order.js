@@ -102,11 +102,11 @@ export function Order({ orders, setOrders, setOpenFood,login,loggedIn,setOpenOrd
   return (
     <OrderStyled>
       {orders.length === 0 ? (
-        <OrderContent>Your order's looking pretty empty.</OrderContent>
+        <OrderContent>Realiza un pedido</OrderContent>
       ) : (
         <OrderContent>
           {" "}
-          <OrderContainer> Your Order: </OrderContainer>{" "}
+          <OrderContainer> Tu pedido: </OrderContainer>{" "}
           {orders.map((order, index) => (
             <OrderContainer editable>
               <OrderItem
@@ -144,7 +144,7 @@ export function Order({ orders, setOrders, setOpenFood,login,loggedIn,setOpenOrd
             </OrderItem>
             <OrderItem>
               <div />
-              <div>Tax</div>
+              <div>Adicional</div>
               <div>{formatPrice(tax)}</div>
             </OrderItem>
             <OrderItem>
@@ -170,7 +170,7 @@ export function Order({ orders, setOrders, setOpenFood,login,loggedIn,setOpenOrd
           }
 
         }}
-        >Checkout</ConfirmButton>
+        >Comprar</ConfirmButton>
       }
       </DialogFooter>
     </OrderStyled>

@@ -8,14 +8,14 @@ export function OrderDialog({openOrderDialog,setOpenOrderDialog,setOrders}){
         <DialogShadow/>
             <Dialog>
                 <DialogContent>
-                    <h2>Tu orden esta en camino</h2>
+                    <h2>Tu orden se ha enviado.En breve se comunicaran para enviarte el pedido</h2>
                 </DialogContent>
                 <DialogFooter>
                     <ConfirmButton onClick={()=>{
                         setOrders([])
                         setOpenOrderDialog()
                     }}>
-                        estoy hambriento
+                        Seguir comprando
                     </ConfirmButton>
                 </DialogFooter>
             </Dialog>

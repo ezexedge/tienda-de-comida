@@ -44,9 +44,9 @@ export function Navbar({login, loggedIn,logout}) {
   return (
     <NavbarStyled>
       <Logo>
-        Sliceline{" "}
+        Cocina de laura{" "}
         <span role="img" aria-label="pizza slice">
-          🍕
+          🍴
         </span>
       </Logo>
       <UserStatus>
@@ -58,7 +58,7 @@ export function Navbar({login, loggedIn,logout}) {
               
               onClick={logout}> Cerrar sesion </Logout>
             ) : (
-              <LoginButton onClick={login}> Log in / Sign up </LoginButton>
+              <LoginButton onClick={login}> Iniciar sesion </LoginButton>
             )}
           </>
         ) : (

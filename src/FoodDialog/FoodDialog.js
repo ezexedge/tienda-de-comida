@@ -134,7 +134,7 @@ function FoodDialogContainer({ openFood, setOpenFood, setOrders, orders }) {
           <QuantityInput quantity={quantity} />
           {hasToppings(openFood) && (
             <>
-              <h3> Would you like toppings? </h3>
+              <h3> Agregar mas ingredientes? </h3>
               <Toppings {...toppings} />
             </>
           )}
@@ -147,7 +147,7 @@ function FoodDialogContainer({ openFood, setOpenFood, setOrders, orders }) {
             onClick={isEditing ? editOrder : addToOrder}
             disabled={openFood.choices && !choiceRadio.value}
           >
-            {isEditing ? `Update order: ` : `Add to order: `}
+            {isEditing ? `actualizar: ` : `Agregar mas: `}
             {formatPrice(getPrice(order))}
           </ConfirmButton>
         </DialogFooter>

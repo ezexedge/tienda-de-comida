@@ -7,8 +7,8 @@ export function useTitle({ openFood, orders }) {
     } else {
       document.title =
         orders.length === 0
-          ? `What's for dinner?`
-          : `[${orders.length}] items in your order! `;
+          ? `Que vas a cocinar?`
+          : `[${orders.length}] items en tu pedido! `;
     }
   });
 }

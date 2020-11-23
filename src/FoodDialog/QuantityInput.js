@@ -38,7 +38,7 @@ const IncrementButton = styled.div`
 export function QuantityInput({ quantity }) {
   return (
     <IncrementContainer>
-      <div>Quantity:</div>
+      <div>Cantidad:</div>
       <IncrementButton
         onClick={() => {
           quantity.setValue(quantity.value - 1);
