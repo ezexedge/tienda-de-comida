@@ -18,6 +18,13 @@ const LoginButton = styled.span`
   cursor: pointer;
 
 `
+const Logout = styled.span`
+color: white;
+padding: 10px;
+background-color: black;
+border-radius: 10px;
+margin-left: 10px;
+`
 
 const Logo = styled(Title)`
   font-size: 20px;
@@ -45,9 +52,11 @@ export function Navbar({login, loggedIn,logout}) {
       <UserStatus>
       {loggedIn !== "loading" ? (
           <>
-            👤 {loggedIn ? "Logged in." : ""}
+            👤 {loggedIn ? `Hola ${loggedIn.displayName} ` : ""}
             {loggedIn ? (
-              <LoginButton onClick={logout}> Log out </LoginButton>
+              <Logout
+              
+              onClick={logout}> Cerrar sesion </Logout>
             ) : (
               <LoginButton onClick={login}> Log in / Sign up </LoginButton>
             )}
