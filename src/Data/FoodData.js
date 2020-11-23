@@ -53,7 +53,7 @@ export const foodItems = [
     price: 200,
     img: "https://images.unsplash.com/photo-1595177924779-dbe82554cc24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     name: "Gaseosas",
-    section: "Drinks",
+    section: "Bebidas",
     choices: ["Coca-cola", "Sprite", "seven-up"]
   }
 ];
