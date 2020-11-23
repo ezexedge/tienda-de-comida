@@ -1,9 +1,32 @@
 const functions = require('firebase-functions');
+const sgMail = require('@sendgrid/mail');
 const nodemailer = require('nodemailer');
 const htmlToText = require('nodemailer-html-to-text').htmlToText;
 
 const {email, password} = require('./config');
+sgMail.setApiKey()
 
+
+
+exports.sendUserEmail = functions.database
+  .ref("/orders/{pushId}")
+  .onCreate(order => {
+    return sendOrderEmail();
+  });
+ 
+function sendOrderEmail(){
+  // TRY THIS FIRST and then you can add information from the above order
+  const msg = {
+    to : 'ezeedge@gmail.com' ,
+    from : 'sendgridcuentagallardo@gmail.com',
+    subject: 'Sending with SendGrid is Fun',
+    text: 'and easy to do anywhere, even with Node.js',
+    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+  };
+  return sgMail.send(msg)
+}
+
+/*
 const mailTransport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -23,6 +46,7 @@ exports.sendUserEmail = functions.database
   });
 
 function sendOrderEmail(order){
+  console.log('ordern...',order)
   const mailOptions = {
     from: `${APP_NAME} <noreply@sliceline.com`,
     to: order.email,
@@ -51,3 +75,6 @@ function sendOrderEmail(order){
   };
   mailTransport.sendMail(mailOptions);
 }
+
+
+*/
